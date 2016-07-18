@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008B8B</color>
+    <color name="colorPrimaryDark">#008080</color>
+    <color name="prime">#99008080</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonSelected">#ADD8E6</color>
+    <color name="buttonPressed">#008000</color>
+    <color name="buttonDecline">#FF00</color>
+    <color name="playBack">#FF4500</color>
+    <color name="whitebt">#FFFFFF</color>
+    <color name="lowerBc">#708090</color>
+    <color name="lowerPressed">#696969</color>
+    <color name="addback">#A6FF4500</color>
+    <color name="addPressed">#A6FF0000</color>
+    <color name="relaBack">#99000000</color>
+    <color name="links">#1E90FF</color>
+</resources>

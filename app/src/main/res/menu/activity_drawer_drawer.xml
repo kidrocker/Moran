@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_prof"
+            android:icon="@mipmap/ic_prof"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_online"
+            android:icon="@mipmap/ic_web"
+            android:title="Store" />
+        <item
+            android:id="@+id/nav_lib"
+            android:icon="@mipmap/ic_list"
+            android:title="library" />
+
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@mipmap/ic_settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Interact with us">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

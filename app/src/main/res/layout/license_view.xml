@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/banner">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moran_ban"
+        android:src="@mipmap/moran_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moran_ban"
+        android:layout_marginTop="0dp"
+        android:text="Login"
+        android:textColor="@color/whitebt"
+        android:id="@+id/bt_login"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:id="@+id/tv_or"
+        android:textColor="@color/whitebt"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_or"
+        android:id="@+id/bt_reg"
+        android:background="@drawable/licence_no"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:padding="6dp"
+        android:textColor="@color/whitebt"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_skip"
+        android:layout_below="@+id/bt_reg"
+        android:text="@string/remind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/tv_skip"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whitebt"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/tv_by"
+        android:text="By continuing you accept"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_service"
+        android:text="@string/terms"
+        android:textColorHighlight="@color/links"
+        android:textColor="@color/links"
+        android:layout_toRightOf="@+id/tv_by"
+        android:layout_below="@id/tv_skip"
+
+        />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginLeft="30dp"
+    android:src="@mipmap/ic_tweet"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_fb"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_ig"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_google"/>
+</LinearLayout>
+</RelativeLayout>

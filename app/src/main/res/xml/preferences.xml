@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="FeedBack"
+        android:key="feedback"
+        android:summary="Drop us a line and tell us what you think"
+        />
+    <Preference android:title="Terms of Usage"
+        android:summary=" T and Cs of using the service"
+        android:key="terms"/>
+    <Preference
+        android:title="Privacy Policy"
+        android:summary="Understand your privacy while using our products"
+        android:key="privacy" />
+    <CheckBoxPreference
+        android:title="Nightly Builds"
+        android:summary="Allows you to receive latest updates. These updates may be unstable and may cause abnormal behavior"
+        android:key="nightly"/>
+    <Preference
+        android:title="Credits"
+        android:summary="Guys who helped out in the development"
+        android:key="credits" />
+    <Preference
+        android:title="About moran"
+        android:summary="@string/version"/>
+
+</PreferenceScreen>

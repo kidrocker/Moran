@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/prime"
+    >
+    <SeekBar
+        android:layout_width="match_parent"
+        android:padding="0dp"
+        android:id="@+id/float_seek"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_margin="3dp"
+            android:layout_height="79dp"
+            android:src="@mipmap/ic_small"
+            android:id="@+id/im_art"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relCont"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whitebt"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="25"
+                android:textSize="18dp"
+                android:text="Dont Play with me"
+                android:id="@+id/tv_song"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-light"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="25"
+                android:id="@+id/tv_artist"
+                android:layout_below="@+id/tv_song"
+                android:textColor="@color/whitebt"
+                android:text="Kimathi Marshall"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt_float_prev"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/float_prev"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt_float_play"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/float_pause"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/bt_float_next"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/float_next" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

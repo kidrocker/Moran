@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Moran</string>
+    <string name="version">Version 0.010 Alpha</string>
+    <string name="action_settings">Settings</string>
+    <string name="m_play">Play</string>
+    <string name="add_play">Add to Playlist</string>
+    <string name="m_delete">Remove from List</string>
+    <string name="terms"><u>Terms of Usage</u></string>
+   <string name="remind"><u>Remind me later</u></string>
+    <string name="title_activity_drawer">DrawerAct</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="register"><u>Tap here to register</u></string>
+    <string name="login"><u>Tap here to login</u></string>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="View as:">
+        <menu>
+        <item
+            android:id="@+id/nav_songs"
+            android:icon="@mipmap/ic_music"
+            android:title="Songs" />
+        <item
+            android:id="@+id/nav_artist"
+            android:icon="@mipmap/ic_artist"
+            android:title="Artist" />
+        <item
+            android:id="@+id/nav_album"
+            android:icon="@mipmap/ic_album"
+            android:title="Albums" />
+
+        <item
+            android:id="@+id/nav_genre"
+            android:icon="@mipmap/ic_genre"
+            android:title="Genre" />
+        </menu>
+        </item>
+    </group>
+
+    <item android:title="Interact with us">
+        <menu>
+            <item
+                android:id="@+id/nav_share_local"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send_local"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ln_toper"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="3dp"
+        android:background="@color/whitebt"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/linear_button"
+            android:text="Play All"
+            android:id="@+id/bt_play_all"
+            android:textColor="@color/prime" />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/linear_button"
+            android:text="favorites"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/bt_favorites"
+            android:textColor="@color/prime" />
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ln_toper"
+        android:layout_above="@+id/float_"
+        android:layout_marginTop="4dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:id="@+id/song_list"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/float_"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:background="@color/prime"
+        >
+        <SeekBar
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:id="@+id/float_seek"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_margin="3dp"
+                android:layout_height="79dp"
+                android:src="@mipmap/ic_small"
+                android:id="@+id/im_art"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relCont"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whitebt"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@android:color/black"
+                    android:shadowRadius="25"
+                    android:textSize="18dp"
+                    android:text="Dont Play with me"
+                    android:id="@+id/tv_song"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@android:color/black"
+                    android:shadowRadius="25"
+                    android:id="@+id/tv_artist"
+                    android:layout_below="@+id/tv_song"
+                    android:textColor="@color/whitebt"
+                    android:text="Kimathi Marshall"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/bt_float_prev"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_previous"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/bt_float_play"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_pause_circle_outline"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/bt_float_next"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_next" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
