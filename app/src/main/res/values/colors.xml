@@ -15,4 +15,5 @@
     <color name="addPressed">#A6FF0000</color>
     <color name="relaBack">#99000000</color>
     <color name="links">#1E90FF</color>
+    <color name="black">#000</color>
 </resources>

@@ -30,7 +30,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.moran.music.R;
-import com.moran.music.service.Player;
+import com.moran.music.services.Player;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;

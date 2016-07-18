@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.moran.music.MainActivity;
+
 import com.moran.music.R;
-import com.moran.music.fragments.SongsFrag;
+import com.moran.music.songs.SongsFrag;
 import com.moran.music.services.getSongs;
 
 /**

@@ -40,10 +40,9 @@ import android.widget.Toast;
 
 import com.moran.music.beta.Feedback;
 import com.moran.music.database.SqliteHandle;
-import com.moran.music.fragments.SongsFrag;
-import com.moran.music.local.ViewLocal;
 import com.moran.music.services.MusicController;
 import com.moran.music.services.Player;
+import com.moran.music.songs.SongsFrag;
 import com.moran.music.utils.Preferences;
 import com.moran.music.utils.user_model;
 
@@ -606,7 +605,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Toast.makeText(this, "This is not available in this build. We are working on it. Thanks for patience", Toast.LENGTH_LONG).show();
 
         } else if (id == R.id.nav_lib) {
-            Intent i = new Intent(MainActivity.this, ViewLocal.class);
+            Intent i = new Intent(MainActivity.this, SongsFrag.class);
             startActivity(i);
 
         } else if (id == R.id.nav_share) {
